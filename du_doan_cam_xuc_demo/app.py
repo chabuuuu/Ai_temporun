@@ -24,13 +24,14 @@ def user_input():
     return text
 input = user_input()
 
-st.write(input)
+# st.write(input)
 encoder = pickle.load(open('encoder.pkl', 'rb'))
 cv = pickle.load(open('CountVectorizer.pkl', 'rb'))
 
 
-model=tf.keras.models.load_model('my_model_daurala3.h5')
+model=tf.keras.models.load_model('my_model_2000_epoch.h5')
 input=preprocess(input)
+st.write(input)
 
 array = cv.transform([input]).toarray()
 

@@ -13,10 +13,10 @@ from nltk.stem.porter import PorterStemmer
 import re
 
 
-# stopwords_vn = []
-# with open('vietnamese-stopwords.txt', 'r', encoding='utf8') as f:
-#     for word in f:
-#         stopwords_vn.append(word.strip())
+stopwords_vn = []
+with open('vietnamese-stopwords.txt', 'r', encoding='utf8') as f:
+    for word in f:
+        stopwords_vn.append(word.strip())
 
 
 dataset=pd.read_table('train.txt', delimiter = '\t', header=None, )
@@ -48,12 +48,14 @@ ps = PorterStemmer()
 #
 def preprocess(line):
     # review = re.sub('[^a-zA-Z]', ' ', line) #chỉ để lại kí tự từ a-z, các dấu câu ! ) (
-    review = re.sub('[^a-zA-Z!)(]', ' ', line)
+    # review = re.sub('[^a-zA-Z!)(]', ' ', line)
+    review = re.sub('[^a-zA-Z!)(:áàạảãăắẵặằấầẩẫậâèéẽẻẹềếệểễòóỏõọôổỗộốồớờơợởỡûùúủũụíìỉĩịêđưứừựữửỳýỹỵỷ]', ' ', line)
+
 
     review = review.lower() #chuyển chữ hoa thành chữ thường
     review = review.split() #chuyển chuoỗi thành danh sách các từ
     #apply Stemming
-    # review = [ps.stem(word) for word in review if not word in stopwords_vn] #delete stop words like I, and ,OR   review = ' '.join(review)
+    review = [ps.stem(word) for word in review if not word in stopwords_vn] #delete stop words like I, and ,OR   review = ' '.join(review)
     #chuyển list thành sentences
     return " ".join(review)
 #
@@ -129,7 +131,7 @@ model.add(Dense(3, activation='softmax'))
 # compile model
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 # Train model
-model.fit(X_train, y_train, epochs=300, batch_size=1)
+model.fit(X_train, y_train, epochs=2000, batch_size=1)
 # evaluate model
 _, accuracy = model.evaluate(X_train, y_train)
 print('Accuracy: %.2f' % (accuracy*100))
@@ -146,7 +148,7 @@ pred = model.predict(array)
 a=np.argmax(pred, axis=1)
 label_encoder.inverse_transform(a)[0]
 
-tf.keras.models.save_model(model,'my_model_daurala3.h5')
+tf.keras.models.save_model(model,'my_model_2000_epoch.h5')
 
 import pickle
 pickle.dump(label_encoder, open('encoder.pkl', 'wb'))
