@@ -45,12 +45,12 @@ data.isna().any(axis=1).sum()
 ps = PorterStemmer()
 #
 def preprocess(line):
-    review = re.sub('[^a-zA-Z]', ' ', line) #leave only characters from a to z
-    review = review.lower() #lower the text
-    review = review.split() #turn string into list of words
+    review = re.sub('[^a-zA-Z]', ' ', line) #chỉ để lại kí tự từ a-z
+    review = review.lower() #chuyển chữ hoa thành chữ thường
+    review = review.split() #chuyển chuoỗi thành danh sách các từ
     #apply Stemming
     review = [ps.stem(word) for word in review if not word in stopwords_vn] #delete stop words like I, and ,OR   review = ' '.join(review)
-    #trun list into sentences
+    #chuyển list thành sentences
     return " ".join(review)
 #
 # data['text']=data['text'].apply(lambda x: preprocess(x))
