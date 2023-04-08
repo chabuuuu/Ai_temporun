@@ -29,7 +29,7 @@ encoder = pickle.load(open('encoder.pkl', 'rb'))
 cv = pickle.load(open('CountVectorizer.pkl', 'rb'))
 
 
-model=tf.keras.models.load_model('my_model_2000_epoch.h5')
+model=tf.keras.models.load_model('my_model_fix_stopword.h5')
 input=preprocess(input)
 st.write(input)
 
