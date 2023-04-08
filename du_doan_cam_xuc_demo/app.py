@@ -29,7 +29,7 @@ encoder = pickle.load(open('encoder.pkl', 'rb'))
 cv = pickle.load(open('CountVectorizer.pkl', 'rb'))
 
 
-model=tf.keras.models.load_model('my_model2.h5')
+model=tf.keras.models.load_model('my_model_daurala3.h5')
 input=preprocess(input)
 
 array = cv.transform([input]).toarray()
