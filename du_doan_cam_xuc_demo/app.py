@@ -29,12 +29,15 @@ encoder = pickle.load(open('encoder.pkl', 'rb'))
 cv = pickle.load(open('CountVectorizer.pkl', 'rb'))
 
 
-model=tf.keras.models.load_model('my_model.h5')
+model=tf.keras.models.load_model('my_model2.h5')
 input=preprocess(input)
 
 array = cv.transform([input]).toarray()
 
 pred = model.predict(array)
+
+all_res = pred
+
 a=np.argmax(pred, axis=1)
 prediction = encoder.inverse_transform(a)[0]
 
@@ -45,4 +48,5 @@ if input == '':
 else:
 
     st.write(prediction)
+    st.write(all_res)
 
