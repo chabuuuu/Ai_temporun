@@ -1,6 +1,7 @@
 import numpy as np
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
+from imblearn.over_sampling import SMOTE
 
 print(tf.__version__)
 
@@ -19,7 +20,7 @@ with open('vietnamese-stopwords.txt', 'r', encoding='utf8') as f:
         stopwords_vn.append(word.strip())
 
 
-dataset=pd.read_table('train.txt', delimiter = '\t', header=None, )
+dataset=pd.read_table('train_relabel.txt', delimiter = '\t', header=None, )
 
 
 
@@ -49,7 +50,7 @@ ps = PorterStemmer()
 def preprocess(line):
     # review = re.sub('[^a-zA-Z]', ' ', line) #chỉ để lại kí tự từ a-z, các dấu câu ! ) (
     # review = re.sub('[^a-zA-Z!)(]', ' ', line)
-    review = re.sub('[^a-zA-Z!)(:áàạảãăắẵặằấầẩẫậâèéẽẻẹềếệểễòóỏõọôổỗộốồớờơợởỡûùúủũụíìỉĩịêđưứừựữửỳýỹỵỷ]', ' ', line)
+    review = re.sub('[^a-zA-Z!)(:^áàạảãăắẵặằấầẩẫậâèéẽẻẹềếệểễòóỏõọôổỗộốồớờơợởỡûùúủũụíìỉĩịêđưứừựữửỳýỹỵỷ]', ' ', line)
 
 
     review = review.lower() #chuyển chữ hoa thành chữ thường
@@ -93,16 +94,31 @@ data['N_label'] = label_encoder.fit_transform(data['label'])
 #
 # data['N_label'].to_csv('N_labels.txt', index=False, header=None)
 # data['label'].to_csv('labels.txt', index=False, header=None)
-# data['text'].to_csv('text.txt', index=False, header=None)
 
 
 
+
+#
+# print(data['text'])
+# # Balance data using SMOTE
+# smote = SMOTE(sampling_strategy='minority')
+# X_sm, y_sm = smote.fit_resample(data['text'].values.reshape(-1, 1), data['N_label'])
+#
+# # Convert X_sm and y_sm to data frame
+# data_sm = pd.DataFrame({'text': X_sm[:, 0], 'N_label': y_sm})
+#
+# # Convert N_label to original label
+# data_sm['label'] = label_encoder.inverse_transform(data_sm['N_label'])
+#
+# # Print value counts of N_label in data_sm
+# print(data_sm['N_label'].value_counts())
 
 #
 #
 data['text']
 #
 #
+
 # # Tạo bag of word nè
 #
 #
@@ -113,11 +129,19 @@ cv = CountVectorizer(max_features=5000,ngram_range=(1,3))#example: the course wa
 data_cv = cv.fit_transform(data['text']).toarray()
 #
 data_cv
+
+
+#Cân bằng dữ liệu
+smote =SMOTE(sampling_strategy='minority')
+text_sm, label_sm = smote.fit_resample(data_cv, data['N_label'])
+text_sm2, label_sm2 = smote.fit_resample(text_sm, label_sm)
+print(label_sm2.value_counts())
 #
 #X_train, X_test, y_train, y_test=data_cv,test_cv,train['N_label'],test['N_label']
-X_train, X_test, y_train, y_test =train_test_split(data_cv, data['N_label'], test_size=0.1, random_state=42)
+# X_train, X_test, y_train, y_test =train_test_split(data_cv, data['N_label'], test_size=0.1, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(text_sm2, label_sm2, test_size=0.1, random_state=42)
+print(X_train[0])
 
-print(y_train)
 # # Tạo model
 from keras import Sequential
 from keras.layers import Dense
@@ -148,7 +172,7 @@ pred = model.predict(array)
 a=np.argmax(pred, axis=1)
 label_encoder.inverse_transform(a)[0]
 
-tf.keras.models.save_model(model,'my_model_fix_stopword.h5')
+tf.keras.models.save_model(model,'my_model_balancedata.h5')
 
 import pickle
 pickle.dump(label_encoder, open('encoder.pkl', 'wb'))

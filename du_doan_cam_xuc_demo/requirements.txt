@@ -1,4 +1,4 @@
-pip==22.0.3
+pip
 tensorflow
 numpy
 pickle
