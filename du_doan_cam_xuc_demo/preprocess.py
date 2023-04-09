@@ -19,6 +19,6 @@ def preprocess(line):
     review = review.split() #turn string into list of words
     # print(review)
     #apply Stemming 
-    review = [ps.stem(word) for word in review if not word in stopwords_vn] #delete stop words like I, and ,OR   review = ' '.join(review)
+    # review = [ps.stem(word) for word in review if not word in stopwords_vn] #delete stop words like I, and ,OR   review = ' '.join(review)
     #trun list into sentences
     return " ".join(review)

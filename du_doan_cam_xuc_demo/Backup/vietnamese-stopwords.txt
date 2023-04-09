@@ -21,6 +21,7 @@ bao lâu
 bao nhiêu
 bao nả
 bay biến
+biết bao
 biết bao nhiêu
 biết chắc
 biết chừng nào
@@ -33,6 +34,7 @@ biết đâu
 biết đâu chừng
 biết đâu đấy
 biết được
+buổi
 buổi làm
 buổi mới
 buổi ngày
@@ -104,11 +106,13 @@ bằng như
 bằng nào
 bằng nấy
 bằng vào
+bằng được
 bằng ấy
 bển
 bệt
 bị chú
 bị vì
+bỏ
 bỏ cuộc
 bỏ không
 bỏ lại
@@ -145,6 +149,7 @@ bởi vì
 bởi vậy
 bởi đâu
 bức
+cao
 cao lâu
 cao ráo
 cao răng
@@ -158,6 +163,8 @@ cha chả
 chao ôi
 chia sẻ
 chiếc
+dạy
+dại
 cho
 cho biết
 cho chắc
@@ -219,6 +226,7 @@ chăn chắn
 chăng
 chăng chắc
 chăng nữa
+chơi
 chơi họ
 chưa bao giờ
 chưa chắc
@@ -231,6 +239,7 @@ chưa tính
 chưa từng
 chầm chập
 chậc
+chắc
 chắc chắn
 chắc dạ
 chắc hẳn
@@ -245,6 +254,7 @@ chẳng phải
 chết nỗi
 chết thật
 chết tiệt
+chỉ
 chỉ chính
 chỉ có
 chỉ là
@@ -253,10 +263,12 @@ chỉn
 chị
 chị bộ
 chị ấy
+chịu
 chịu chưa
 chịu lời
 chịu tốt
 chịu ăn
+chọn
 chọn bên
 chọn ra
 chốc chốc
@@ -270,6 +282,7 @@ chợt
 chợt nghe
 chợt nhìn
 chủn
+chứ
 chứ ai
 chứ còn
 chứ gì
@@ -852,6 +865,7 @@ nhanh lên
 nhanh tay
 nhau
 nhiên hậu
+nhiều
 nhiều ít
 nhiệt liệt
 nhung nhăng
@@ -952,6 +966,7 @@ nào phải
 nào đâu
 nào đó
 này
+này nọ
 nên chi
 nên chăng
 nên làm
@@ -1083,6 +1098,7 @@ quay bước
 quay lại
 quay số
 quay đi
+quá
 quá bán
 quá bộ
 quá giờ
@@ -1134,6 +1150,7 @@ rõ thật
 rút cục
 răng
 răng răng
+rất
 rất lâu
 rằng
 rằng là
@@ -1209,7 +1226,6 @@ tanh tanh
 tay
 tay quay
 tha hồ
-thầy
 tha hồ chơi
 tha hồ ăn
 than ôi

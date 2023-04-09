@@ -56,7 +56,7 @@ def preprocess(line):
     review = review.lower() #chuyển chữ hoa thành chữ thường
     review = review.split() #chuyển chuoỗi thành danh sách các từ
     #apply Stemming
-    review = [ps.stem(word) for word in review if not word in stopwords_vn] #delete stop words like I, and ,OR   review = ' '.join(review)
+    # review = [ps.stem(word) for word in review if not word in stopwords_vn] #delete stop words like I, and ,OR   review = ' '.join(review)
     #chuyển list thành sentences
     return " ".join(review)
 #
@@ -143,15 +143,37 @@ X_train, X_test, y_train, y_test = train_test_split(text_sm2, label_sm2, test_si
 print(X_train[0])
 
 # # Tạo model
+# from keras import Sequential
+# from keras.layers import Dense
+# # load dataset
+# # Chia thành X: text, y: label
+# # tạo layer cho model:
+# model = Sequential()
+# model.add(Dense(12, input_shape=(X_train.shape[1],), activation='relu'))
+# model.add(Dense(8, activation='relu'))
+# model.add(Dense(3, activation='softmax'))
+
+
 from keras import Sequential
 from keras.layers import Dense
-# load dataset
-# Chia thành X: text, y: label
-# tạo layer cho model:
+from keras.optimizers import Adam
+from keras.layers import Dropout
+
+# Định nghĩa mô hình
 model = Sequential()
-model.add(Dense(12, input_shape=(X_train.shape[1],), activation='relu'))
-model.add(Dense(8, activation='relu'))
+model.add(Dense(32, input_shape=(X_train.shape[1],), activation='relu'))
+model.add(Dropout(0.2))  # Áp dụng Dropout để tránh overfitting
+model.add(Dense(16, activation='relu'))
+model.add(Dropout(0.2))  # Áp dụng Dropout để tránh overfitting
 model.add(Dense(3, activation='softmax'))
+
+# Compile mô hình với optimizer Adam và learning rate 0.001
+opt = Adam(learning_rate=0.001)
+model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
+
+
+
+
 # compile model
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 # Train model
@@ -165,6 +187,24 @@ _, accuracy = model.evaluate(X_test, y_test)
 print('Accuracy: %.2f' % (accuracy*100))
 #
 #
+
+# from sklearn.feature_extraction.text import CountVectorizer
+# from sklearn.pipeline import Pipeline
+# from sklearn.svm import LinearSVC
+# vectorizer = CountVectorizer(max_features=1000)
+# classifier = LinearSVC(C=1.0, class_weight='balanced')
+# model_min = Pipeline(
+#     [
+#         ("vectorizer", vectorizer),
+#         ("classifier", classifier),
+#     ]
+# )
+#
+# model_min.fit(X_train, y_train)
+
+
+
+
 text='Thầy dạy hay'
 text=preprocess(text)
 array = cv.transform([text]).toarray()
@@ -172,7 +212,7 @@ pred = model.predict(array)
 a=np.argmax(pred, axis=1)
 label_encoder.inverse_transform(a)[0]
 
-tf.keras.models.save_model(model,'my_model_balancedata_relabel_1000epoch.h5')
+tf.keras.models.save_model(model,'dua_tren_danhgiacaonhat_epoch1000.h5')
 
 import pickle
 pickle.dump(label_encoder, open('encoder.pkl', 'wb'))
