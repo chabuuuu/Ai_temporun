@@ -20,7 +20,7 @@ with open('vietnamese-stopwords.txt', 'r', encoding='utf8') as f:
         stopwords_vn.append(word.strip())
 
 
-dataset=pd.read_table('train_relabel.txt', delimiter = '\t', header=None, )
+dataset=pd.read_table('train_after_relabel.txt', delimiter = '\t', header=None, )
 
 
 
@@ -93,7 +93,7 @@ data['N_label'] = label_encoder.fit_transform(data['label'])
 
 #
 # data['N_label'].to_csv('N_labels.txt', index=False, header=None)
-# data['label'].to_csv('labels.txt', index=False, header=None)
+# data['text'].to_csv('labels.txt', index=False, header=None)
 
 
 
@@ -172,7 +172,7 @@ pred = model.predict(array)
 a=np.argmax(pred, axis=1)
 label_encoder.inverse_transform(a)[0]
 
-tf.keras.models.save_model(model,'my_model_balancedata.h5')
+tf.keras.models.save_model(model,'my_model_balancedata_relabel.h5')
 
 import pickle
 pickle.dump(label_encoder, open('encoder.pkl', 'wb'))
