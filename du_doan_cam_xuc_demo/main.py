@@ -155,7 +155,7 @@ model.add(Dense(3, activation='softmax'))
 # compile model
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 # Train model
-model.fit(X_train, y_train, epochs=100, batch_size=1)
+model.fit(X_train, y_train, epochs=1000, batch_size=1)
 # evaluate model
 _, accuracy = model.evaluate(X_train, y_train)
 print('Accuracy: %.2f' % (accuracy*100))
@@ -172,7 +172,7 @@ pred = model.predict(array)
 a=np.argmax(pred, axis=1)
 label_encoder.inverse_transform(a)[0]
 
-tf.keras.models.save_model(model,'my_model_balancedata_relabel.h5')
+tf.keras.models.save_model(model,'my_model_balancedata_relabel_1000epoch.h5')
 
 import pickle
 pickle.dump(label_encoder, open('encoder.pkl', 'wb'))

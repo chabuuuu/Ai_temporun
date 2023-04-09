@@ -163,6 +163,8 @@ cha chả
 chao ôi
 chia sẻ
 chiếc
+dạy
+dại
 cho
 cho biết
 cho chắc
@@ -226,7 +228,6 @@ chăng chắc
 chăng nữa
 chơi
 chơi họ
-chưa
 chưa bao giờ
 chưa chắc
 chưa có
@@ -408,7 +409,6 @@ cảm ơn
 cấp
 cấp số
 cấp trực tiếp
-cần
 cần cấp
 cần gì
 cần số
@@ -508,7 +508,6 @@ gây cho
 gây giống
 gây ra
 gây thêm
-gì
 gì gì
 gì đó
 gần
@@ -968,7 +967,6 @@ nào đâu
 nào đó
 này
 này nọ
-nên
 nên chi
 nên chăng
 nên làm

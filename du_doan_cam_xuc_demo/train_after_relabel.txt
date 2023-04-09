@@ -1714,7 +1714,7 @@ positive	cô giảng dễ hiểu , nhiệt tình .
 neutral   	thầy dạy rất tốt và tâm huyết , phương pháp hợp lý và nội dung giảng dạy tạo hứng thú cho sinh viên .
 positive	giáo viên đứng lớp dạy rất hay .
 negative	tóm lại đề thi 50% là kiến thức về mạng chủ yếu không tập trung vào hệ điều hành linux .
-positive	dạy chán .
+negative	dạy chán .
 positive	giáo viên tận tình , nhiệt tình trong việc cung cấp tài liệu và bài tập qua facebook .
 positive	cung cấp cho sinh viên đủ bài tập khi đến lớp cũng như làm ở nhà .
 neutral   	nhiệt tình , kỹ năng dạy kinh nghiệm .
@@ -3684,7 +3684,7 @@ positive	thầy wzjwz14 rất tận tâm truyền dạy không những kiến th
 positive	em rất đồng tình với cách thông tin đến sinh viên của thầy wzjwz134 , thầy thông tin cho sinh viên qua facebook giúp sinh viên nắm thông tin nhanh hơn qua trang courses hay daa .
 positive	giảng viên tận tâm , nhiệt tình , kiến thức và khả năng truyền đạt của giảng viên rất tốt .
 positive	dễ tiếp thu .
-positive	anh văn ở đại học không thể dạy giống như cấp 3 được khi cô dạy lớp im không sôi nổi , chỉ có vài người giơ tay vì câu hỏi không mang tính tương tác , câu trả lời có sẵn trong bài chỉ cần đọc lên nên nhiều người chán không giơ tay , đi học chỉ để điểm danh .
+negative	anh văn ở đại học không thể dạy giống như cấp 3 được khi cô dạy lớp im không sôi nổi , chỉ có vài người giơ tay vì câu hỏi không mang tính tương tác , câu trả lời có sẵn trong bài chỉ cần đọc lên nên nhiều người chán không giơ tay , đi học chỉ để điểm danh .
 negative	tài liệu của môn này quá ít .
 positive	em cảm thấy hài lòng với môn này .
 neutral   	thầy lên lớp sớm .
@@ -3733,7 +3733,7 @@ neutral   	cung cấp đủ tài liệu về môn học , giảng viên tâm huy
 positive	tiếp thu được nhiều kiến thức .
 neutral   	cách truyền đạt của giảng viên tốt .
 positive	chưa có nhiều bài tập cho sinh viên .
-positive	môn này rất chán , giáo viên dạy cũng chán , nói chung vô cùng không hài lòng với môn này .
+negative	môn này rất chán , giáo viên dạy cũng chán , nói chung vô cùng không hài lòng với môn này .
 negative	nên cập nhật kiến thức thực tiễn .
 negative	còn một số mục khó nhưng hay thì cô lại dạy lướt qua .
 negative	thầy giảng bài khó hiểu quá .
@@ -4211,7 +4211,7 @@ positive	giảng viên lên lớp đúng giờ , giảng dạy nghiêm túc , t�
 negative	ngồi nhiều , nhìn slide nhiều .
 neutral   	thầy trang bị cho những kỹ năng chuyên sâu và hướng mở của môn học .
 negative	thầy không có up tài liệu cũng như bài giảng lên moodle .
-positive	phương pháp dạy còn chưa thực sự thu hút được sự chú ý của sinh viên gây nên nhàm chán và thụ động .
+negative	phương pháp dạy còn chưa thực sự thu hút được sự chú ý của sinh viên gây nên nhàm chán và thụ động .
 positive	vui tính nhiệt tình .
 positive	cô dễ tính .
 positive	thường lố giờ .
@@ -4498,7 +4498,7 @@ positive	thầy học bên ucla về nên dạy tiếng anh rất tốt .
 positive	cô dạy rất hay và quan tâm học sinh .
 negative	không thấy đi thực hành buổi nào !
 negative	nên tiết chế lại các yêu cầu về đồ án môn học như việc chấm chéo , làm clip hướng dẫn vừa lồng tiếng lại còn chèn sub .
-negative	thầy dạy rất nhiệt tình và dễ hiểu , tuy nhiên do học sinh còn lười nhác học bài nên đôi khi kết quả không được như mong muốn .
+positive	thầy dạy rất nhiệt tình và dễ hiểu , tuy nhiên do học sinh còn lười nhác học bài nên đôi khi kết quả không được như mong muốn .
 positive	thầy nhiệt tình , giảng bài dễ hiểu .
 positive	nói chuyện dễ hiểu , dễ nghe .
 positive	cô dạy hay , dế hiểu .
@@ -4561,7 +4561,7 @@ positive	thầy dạy vui tính , hứng thú trong học tập .
 positive	phần ôn tập rất dễ hiểu .
 negative	cần có các đề tài cụ thể và quy trình thực tế để sinh viên thực hiện ở môn học này !
 positive	thầy dạy tận tình , dễ hiểu .
-neutral   	cô dạy rất nhiệt tình , vui tính dễ hiểu .
+positive   	cô dạy rất nhiệt tình , vui tính dễ hiểu .
 positive	giảng viên nhiệt tình , tận tâm đới với sinh viên .
 positive	cám ơn thầy dạy rất hay !
 positive	đề cương môn học nói chung chưa sát với đề cho lắm .
@@ -4573,12 +4573,12 @@ positive	thầy dạy nhiệt tình , dễ hiểu , tận tình , làm nhiều b
 negative	cách dạy còn hơi khô khan , ít ví dụ , chủ yếu là giảng viên nói sinh viên nghe .
 neutral    	trong khi đề thi cho phép sinh viên dùng mạng .
 positive	phương pháp lôi cuốn sinh viên .
-neutral   	thầy giáo dạy rất nhiệt tình , khả năng truyền đạt tốt , vui vẻ , lịch sự , dễ gần .
+positive   	thầy giáo dạy rất nhiệt tình , khả năng truyền đạt tốt , vui vẻ , lịch sự , dễ gần .
 positive	dễ hiểu và cách dạy phù hợp .
 negative	phòng thực hành dây mạng không rút được , wifi thì yếu .
 positive	sự nhiệt tình vui vẻ .
 neutral    	bài tập trực tuyến .
-neutral   	dễ hiểu , tận tâm !
+positive   	dễ hiểu , tận tâm !
 neutral   	vui vẻ , tận tình giải đáp thắc mắc và cung cấp nhiều kiến thức bổ ích .
 negative	tuy tận tâm , nhiệt tình nhưng kiến thức thầy dạy khá cao siêu , sinh viên chưa đủ lĩnh hội được .
 negative	giờ giấc lộn xộn .
@@ -4609,7 +4609,7 @@ neutral   	được học thầy là một niềm vinh hạnh .
 positive	thầy giảng dạy hay và hiệu quả .
 negative	thầy giảng chưa thu hút .
 positive	cô tận tâm , có những chuẩn mực tốt đẹp của một nhà giáo .
-neutral   	thầy dạy rất dễ hiểu , em cảm ơn thầy .
+positive   	thầy dạy rất dễ hiểu , em cảm ơn thầy .
 positive	thầy không dùng slide bài giảng để dạy , nhưng phong cách dạy của thầy rất tuyệt vời , rất hay và dễ hiểu .
 negative	giảng viên lên lớp không đúng giờ .
 negative	cô hay đảo lộn giữa slide tiếng anh và tiếng việt làm việc theo dõi nội dung hơi khó , ngoài ra cách cô dạy không phải là khó tiếp thu mà tại vì cô không tạo được sự thoải mái trong tiết học làm cho chúng em không có hứng học tập .
@@ -4674,7 +4674,7 @@ negative	thiết nghĩ , nên chia thời gian học ra thành 2 buổi , mỗi 
 negative	cách truyền đạt không gây hứng thú .
 negative	các bài thực hành thường rất khó , quá tầm hiện tại của các sinh viên , dẫn đến các sinh viên thường nản chí và hầu như bỏ đi 20% số điểm của môn thực hành !
 negative	hệ thống máy chiếu cần cải thiện .
-neutral   	thầy nhiệt tình dạy giỏi , cung cấp tài liệu cho sinh viên đầy đủ dễ hiểu .
+positive   	thầy nhiệt tình dạy giỏi , cung cấp tài liệu cho sinh viên đầy đủ dễ hiểu .
 positive	giáo viên nhiệt tình , đi dạy đúng giờ .
 negative	bị chậm hoặc bị treo máy giữa chừng .
 negative	hy vọng lần sau sinh viên không nhận được câu " đâu có ai hỏi tôi đâu mà nói " của giảng viên khi sinh viên nói là không biết đề thi là đề mở .
@@ -4689,7 +4689,7 @@ negative	danh sách lớp phân bổ không đều , số sinh viên nhiều hơ
 negative	tuy nhiên , số lượng nhiệm vụ nhiều quá .
 negative	không cho nhiều bài tập về phần mạch chẵn lẻ , mạch so sánh .
 positive	thầy dễ tính , nhiệt tình .
-neutral   	giảng viên dễ tính gần gũi với học sinh .
+positive   	giảng viên dễ tính gần gũi với học sinh .
 neutral    	mong thầy vẫn giữa phong độ như thế ;) .
 negative	cách thầy wzjwz173 chấm điểm quá trình quá gắt .
 positive	nhiệt tình , vui tính , giảng dạy dễ hiểu .
@@ -4744,7 +4744,7 @@ negative	cần hướng dẫn nhiều hơn về phần bài tập .
 negative	nên chú trọng bài tập hơn lý thuyết .
 positive	giáo viên nhiệt tình , bài giảng dễ hiểu .
 positive	hệ thống kiến thức được thầy cung cấp khá nhiều , logic và thiết thực .
-neutral   	cho nhiều ví dụ dễ hiểu .
+positive   	cho nhiều ví dụ dễ hiểu .
 positive	giáo viên có nhiều kinh nghiệm .
 negative	phần điểm tích cực theo như thầy đánh giá là không hợp lý và công bằng cho tất cả sinh viên nếu điểm đó được tính là wzjwz59 % trong tổng điểm .
 negative	tóm lại , kiến thức tổng quan thì có thể tiếp nhận nhưng kiến thức về chi tiết nội dung thì mập mờ .
@@ -4831,7 +4831,7 @@ positive	như vậy , chất lượng dạy và học sẽ được nâng lên �
 negative	các bài thực hành cần có tính định hướng hơn thay vì làm các công việc cụ thể như nạp firmware cho router .
 neutral   	giảng dạy chất lượng .
 positive	vui vẻ , nhiệt tình chỉ bảo .
-neutral   	dạy dễ hiểu , ân cần .
+positive   	dạy dễ hiểu , ân cần .
 positive	tất cả đều hài lòng .
 positive	thầy dạy tận tâm , dễ hiểu , vui tính , có kiến thức sâu rộng trong nhiều lĩnh vực .
 negative	giảng viên khi giảng giọng đều đều dễ làm sinh viên nghe vào buồn ngủ .
@@ -4841,7 +4841,7 @@ positive	cô rất công bằng và xét đúng năng lực sinh viên qua bài 
 positive	cô có nhiều chia sẻ hay về cuộc sống thông qua môn học .
 positive	thầy tận tâm , dạy dễ hiểu , hướng dẫn kỹ cho sinh viên cách giải bài tập .
 positive	phong thái chuyên nghiệp .
-neutral   	thầy trẻ , hiền , dạy dễ hiểu .
+positive   	thầy trẻ , hiền , dạy dễ hiểu .
 positive	thầy tạo ra nhiều hoạt động hay để áp dụng kiến thức vào bài học .
 negative	nên hướng dẫn rõ hơn .
 negative	giảng viên nên thêm nhiều bài tập thực hành trên lớp cũng như bài tập ôn tập thi các kỳ cho sinh viên .
@@ -4911,7 +4911,7 @@ negative	nên thay máy chiếu và âm thanh tại phòng wzjwz154 .
 negative	hiện tại trong khi chương trình thực hành đã kết thúc nhưng vẫn không có lịch thi cụ thể .
 neutral   	thầy tận tâm , dễ hiểu .
 positive	cô tổ chức nhiều hoạt động kết hợp với môn học nhằm nâng cao hiệu quả .
-neutral   	giảng viên tận tình truyền đạt kiến thức biết cách làm lớp học không bị nhàm chán giúp sinh viên có hứng thú học hơn ngoài ra còn có các trò chơi áp dụng kiến thức giúp cho sinh viên hiểu hơn về vấn đề mới học .
+positive   	giảng viên tận tình truyền đạt kiến thức biết cách làm lớp học không bị nhàm chán giúp sinh viên có hứng thú học hơn ngoài ra còn có các trò chơi áp dụng kiến thức giúp cho sinh viên hiểu hơn về vấn đề mới học .
 negative	cần tăng thời gian môn học lên 20 - 40% để sinh viên có đủ thời gian tiếp thu sâu hơn kiến thức môn học .
 positive	giải đáp thắc mắc nhiệt tình .
 neutral    	nội dung môn học không thừa , không thiếu .
@@ -4983,7 +4983,7 @@ positive	ôn tập dễ hiểu .
 negative	mong thầy quan tâm học trò của mình hơn nữa !
 negative	số tiết thực hành còn ít .
 negative	nên cập nhật book , slide thường xuyên vì quá cũ không tích hợp được với chương trình bây giờ .
-negative	đầu tư một bộ giáo trình chất lượng , dễ hiểu .
+positive	đầu tư một bộ giáo trình chất lượng , dễ hiểu .
 negative	phòng ốc nên sạch sẽ hơn thì sinh viên sẽ có hứng thú ngồi lâu hơn trong phòng học .
 negative	lớp thực hành rất hay bị hủy không lý do , giáo viên thực hành ít tận tâm , không hướng dẫn sinh viên .
 negative	chiếm 20% điểm bất công so với lớp của giáo viên dạy cùng môn .
@@ -4996,5 +4996,5 @@ positive	nhiệt tình trong giờ lên lớp cũng như check mail .
 positive	cô nhiệt tình .
 negative	học đều đặn .
 neutral    	chia lớp theo đúng khả năng !
-positive	giảng viên giảng bài không gây hứng thú cho người nghe , dễ gây mất tâm trung và buồn ngủ .
+negative	giảng viên giảng bài không gây hứng thú cho người nghe , dễ gây mất tâm trung và buồn ngủ .
 positive	nhiệt tình và quan tâm đến từng sinh viên .
